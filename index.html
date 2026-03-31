@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensure Assessoria Contábil – Fale Conosco</title>
+  <meta http-equiv="refresh" content="2; url=tel:1636337995">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal: #1a8a85;
+      --teal-dark: #136e6a;
+      --orange: #e84c1e;
+      --orange-hover: #c73d14;
+      --light: #f4f7f7;
+      --text: #1c2b2b;
+      --muted: #5a7070;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--teal);
+      padding: 0 32px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .logo-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.55rem;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-name span {
+      color: var(--orange);
+    }
+
+    .logo-sub {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.48rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .logo-tagline {
+      font-size: 0.58rem;
+      color: rgba(255,255,255,0.6);
+      margin-top: 1px;
+      font-style: italic;
+    }
+
+    /* ── HERO / MAIN ── */
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 72px - 56px);
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(26,138,133,0.12), 0 2px 8px rgba(0,0,0,0.06);
+      padding: 48px 40px 52px;
+      max-width: 480px;
+      width: 100%;
+      animation: rise 0.55s cubic-bezier(.22,.68,0,1.2) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .icon-ring {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      box-shadow: 0 4px 20px rgba(26,138,133,0.35);
+      animation: pulse 2.2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(26,138,133,0.35); }
+      50%       { box-shadow: 0 4px 32px rgba(26,138,133,0.6); }
+    }
+
+    .icon-ring svg {
+      width: 36px;
+      height: 36px;
+      fill: #fff;
+    }
+
+    .eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .phone-display {
+      background: var(--light);
+      border: 2px solid rgba(26,138,133,0.18);
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--teal-dark);
+      letter-spacing: 1px;
+      margin-bottom: 28px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      background: var(--orange);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border-radius: 8px;
+      padding: 16px 24px;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(232,76,30,0.30);
+    }
+
+    .cta-btn:hover, .cta-btn:focus {
+      background: var(--orange-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(232,76,30,0.40);
+      outline: none;
+    }
+
+    .cta-btn:active {
+      transform: translateY(0);
+    }
+
+    .auto-note {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 18px;
+    }
+
+    .auto-note strong {
+      color: var(--teal);
+    }
+
+    /* countdown ring */
+    .countdown-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .countdown-ring {
+      position: relative;
+      width: 30px;
+      height: 30px;
+    }
+
+    .countdown-ring svg {
+      transform: rotate(-90deg);
+    }
+
+    .countdown-ring .track {
+      fill: none;
+      stroke: rgba(26,138,133,0.15);
+      stroke-width: 3;
+    }
+
+    .countdown-ring .fill {
+      fill: none;
+      stroke: var(--teal);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-dasharray: 75.4;
+      stroke-dashoffset: 0;
+      animation: countdown 2s linear forwards;
+    }
+
+    @keyframes countdown {
+      from { stroke-dashoffset: 0; }
+      to   { stroke-dashoffset: 75.4; }
+    }
+
+    .countdown-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      height: 56px;
+      background: var(--teal-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    footer p {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.65);
+    }
+
+    footer a {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+    }
+
+    footer a:hover { color: #fff; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 520px) {
+      header { padding: 0 20px; }
+      .card { padding: 36px 24px 40px; }
+      h1 { font-size: 1.4rem; }
+      .phone-display { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span class="logo-name">Mensure<span>®</span></span>
+      <span class="logo-sub">Assessoria Contábil</span>
+      <span class="logo-tagline">Contabilizando sucessos com excelência.</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+
+      <div class="icon-ring">
+        <!-- phone icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/>
+        </svg>
+      </div>
+
+      <p class="eyebrow">Fale conosco</p>
+      <h1>Vamos te atender agora!</h1>
+      <p class="description">
+        Clique no botão abaixo para falar diretamente com a nossa equipe. Estamos prontos para ajudar com suas necessidades contábeis.
+      </p>
+
+      <div class="phone-display">(16) 3633-7995</div>
+
+      <a href="tel:1636337995" class="cta-btn">
+        📞 &nbsp;Ligar agora
+      </a>
+
+      <div class="countdown-wrap">
+        <div class="countdown-ring">
+          <svg viewBox="0 0 26 26" width="30" height="30">
+            <circle class="track" cx="13" cy="13" r="12"/>
+            <circle class="fill"  cx="13" cy="13" r="12"/>
+          </svg>
+        </div>
+        <span class="countdown-label">Redirecionando automaticamente em instantes…</span>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>R. Bahia, 1028 – Ipiranga, Ribeirão Preto – SP</p>
+    <p>·</p>
+    <a href="https://www.mensure.com.br" target="_blank">mensure.com.br</a>
+    <p>·</p>
+    <p>© 2026 Mensure Assessoria Contábil</p>
+  </footer>
+
+</body>
+</html>
